@@ -6,7 +6,7 @@ module.exports = {
         .setDescription("Faz uma pergunta ao bot.")
         .addStringOption(option =>
             option.setName("pergunta")
-                .setDescription("Sua pergunta para o bot :)")
+                .setDescription("Sua pergunta para o bot.")
                 .setRequired(true)),
     async execute(interaction) {
         await interaction.reply(`${interaction.user.username} perguntou:  ${interaction.options.getString("pergunta")}`)
