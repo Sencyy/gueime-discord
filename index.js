@@ -43,6 +43,11 @@ client.on(Events.InteractionCreate, async interaction => {
         console.error(error);
         await interaction.reply({content: "Ocorreu um erro ao executar esse comando! :(", ephemeral: false});
     }
+
+    if (interaction.content === "buenias noitches") {
+        interaction.channel.send("bueneime");
+    }
 });
+
 
 client.login(token);
