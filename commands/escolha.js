@@ -14,7 +14,7 @@ module.exports = {
                 .setRequired(true)),
     async execute(interaction) {
         await interaction.reply(`entre ${interaction.options.getString("escolha1")} e ${interaction.options.getString("escolha2")}`)
-        await interaction.followUp(`eu escolho ${escolher(interaction.options.getString("escolha1"), interaction.options.getString("escolha2"))}`);
+        await interaction.followUp(`mim escolher ${escolher(interaction.options.getString("escolha1"), interaction.options.getString("escolha2"))}`);
         console.log("Escolha solicitada!");
     },
 };

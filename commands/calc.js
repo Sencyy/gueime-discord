@@ -4,7 +4,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName("calc")
         .setDescription("calculadora gueime")
-        .addStringOption(option =>
+        .addIntegerOption(option =>
             option.setName("num1")
                 .setDescription("numero 1")
                 .setRequired(true))
@@ -17,12 +17,20 @@ module.exports = {
                 .setDescription("numero 2")
                 .setRequired(true)),
     async execute(interaction) {
-        await interaction.reply(`${interaction.options.getString("num1")} + ${interaction.options.getInteger("num2").toString()} = ${calculo(interaction.options.getString("num1"), interaction.options.getInteger("num2"))}`)
+        await interaction.reply(`${interaction.options.getInteger("num1").toString()} ${interaction.options.getString("op")} ${interaction.options.getInteger("num2").toString()} = ${calculo(interaction.options.getInteger("num1"), interaction.options.getString("op"), interaction.options.getInteger("num2"))}`)
         console.log("Calculo solicitado!");
     },
 };
 
-function calculo(num1, num2) {
-    resultado = num1 + num2;
+function calculo(num1, op,  num2) {
+    if (op === "+") {
+        resultado = num1 + num2;
+    } else if (op === "-") {
+        resultado = num1 - num2;
+    } else if (op === "x") {
+        resultado = num1 * num2;
+    } else if (op === "/") {
+        resultado = num1 / num2;
+    }
     return resultado;
 } 
