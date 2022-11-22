@@ -10,6 +10,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "discord.js": "^14.6.0",
-    "mathjs": "^11.4.0"
+    "mathjs": "^11.4.0",
+    "tenorjs": "^1.0.10"
   }
 }
