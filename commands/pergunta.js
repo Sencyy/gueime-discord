@@ -9,7 +9,7 @@ module.exports = {
                 .setDescription("Sua pergunta para o bot.")
                 .setRequired(true)),
     async execute(interaction) {
-        await interaction.reply(`${interaction.user.username} perguntou:  ${interaction.options.getString("pergunta")}`)
+        await interaction.reply(`${interaction.user.username} perguntou: ${interaction.options.getString("pergunta")}`)
         await interaction.followUp(`eu acho que ${responder()}`);
         console.log("Pergunta solicitada!");
     },
