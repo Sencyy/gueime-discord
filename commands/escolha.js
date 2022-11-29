@@ -13,8 +13,12 @@ module.exports = {
                 .setDescription("opção 2")
                 .setRequired(true)),
     async execute(interaction) {
-        await interaction.reply(`entre ${interaction.options.getString("escolha1")} e ${interaction.options.getString("escolha2")}`)
-        await interaction.followUp(`mim escolher ${escolher(interaction.options.getString("escolha1"), interaction.options.getString("escolha2"))}`);
+        escolha1 = interaction.options.getString("escolha1");
+        escolha2 = interaction.options.getString("escolha2");
+        escolha = escolher(escolha1, escolha2);
+        
+        await interaction.reply(`entre ${escolha1} e ${escolha2}`)
+        await interaction.followUp(`mim escolher ${escolha}`);
         console.log("Escolha solicitada!");
     },
 };
