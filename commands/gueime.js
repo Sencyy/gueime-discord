@@ -9,7 +9,9 @@ module.exports = {
                 .setDescription("quem e gueime")
                 .setRequired(true)),
     async execute(interaction) {
-        await interaction.reply(`${interaction.options.getString("quem")} ser um gueime`);
+        quem = interaction.options.getString("quem");
+
+        await interaction.reply(`${quem} ser um gueime`);
         console.log("Gueime solicitado!")
     },
 };

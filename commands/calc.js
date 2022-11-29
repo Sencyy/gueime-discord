@@ -17,7 +17,10 @@ module.exports = {
                 .setDescription("numero 2")
                 .setRequired(true)),
     async execute(interaction) {
-        await interaction.reply(`${interaction.options.getInteger("num1").toString()} ${interaction.options.getString("op")} ${interaction.options.getInteger("num2").toString()} = ${calculo(interaction.options.getInteger("num1"), interaction.options.getString("op"), interaction.options.getInteger("num2"))}`)
+        num1 = interaction.options.getInteger("num1");
+        op = interaction.options.getString("op")
+        num2 = interaction.options.getInteger("num2")
+        await interaction.reply(`${num1.toString()} ${op} ${num2.toString()} = ${calculo(num1, op, num2)}`)
         console.log("Calculo solicitado!");
     },
 };
