@@ -1,5 +1,4 @@
 const {SlashCommandBuilder} = require("discord.js");
-const { client } = require("tenorjs");
 
 module.exports = {
     data: new SlashCommandBuilder()
