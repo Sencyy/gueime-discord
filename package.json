@@ -10,7 +10,6 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "discord.js": "^14.6.0",
-    "ifunnynode": "^3.0.10",
     "mathjs": "^11.4.0",
     "random-reddit": "^2.0.3",
     "tenorjs": "^1.0.10"
