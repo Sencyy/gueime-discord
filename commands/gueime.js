@@ -12,6 +12,6 @@ module.exports = {
         quem = interaction.options.getString("quem");
 
         await interaction.reply(`${quem} ser um gueime`);
-        console.log("Gueime solicitado!")
+        console.log("Gueime solicitado!");
     },
 };
