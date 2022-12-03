@@ -2,8 +2,8 @@ const {SlashCommandBuilder} = require("discord.js");
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("deletelast")
-        .setDescription("deleta a ultima mensagem do bot"),
+        .setName("delete")
+        .setDescription("deleta a ultima mensagem enviada no canal"),
     async execute(interaction) {
         interaction.channel.messages.fetch({ limit: 1 }).then(messages => {
             let lastMessage = messages.first();
