@@ -3,7 +3,7 @@ const {SlashCommandBuilder} = require("discord.js");
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("delete")
-        .setDescription("deleta a última mensagem enviaad pelo bot")
+        .setDescription("deleta a última mensagem enviada pelo bot")
         .addStringOption(option =>
             option.setName("mensagem")
                 .setDescription("id da mensagem")
