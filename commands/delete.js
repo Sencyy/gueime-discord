@@ -8,7 +8,6 @@ module.exports = {
         interaction.channel.messages.fetch({ limit: 1 }).then(messages => {
             let lastMessage = messages.first();
             interaction.channel.messages.delete(lastMessage);
-            
         })
 
         await interaction.reply({content: "Mensagem apagada com sucesso!", ephemeral: true});
