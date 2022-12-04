@@ -34,6 +34,8 @@ function calculo(num1, op,  num2) {
         resultado = num1 * num2;
     } else if (op === "/") {
         resultado = num1 / num2;
+    } else {
+        resultado = "operador inválido!"
     }
     return resultado;
 } 
