@@ -12,6 +12,10 @@
 * Download dependencies
 
     `yarn install`
+* Deploy commands
+
+    `yarn deploy-global` or `yarn deploy-guild`
+
 * Run
 
-    `node .`
+    `yarn start`
