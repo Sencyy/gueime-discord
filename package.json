@@ -4,17 +4,25 @@
   "description": "O bot mais gueime do brasil agora para Discord",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "remove": "node remove-commands.js",
+    "deploy-global": "node deploy-commands-global.js",
+    "deploy-guild": "node deploy-commands-guild"
   },
   "author": "Sencyy",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@discordjs/voice": "^0.14.0",
+    "discord-voice": "^2.0.6",
     "discord.js": "^14.6.0",
+    "ffmpeg-static": "^5.1.0",
     "libsodium-wrappers": "^0.7.10",
     "mathjs": "^11.4.0",
     "openai": "^3.1.0",
+    "opusscript": "^0.0.8",
     "random-reddit": "^2.0.3",
-    "tenorjs": "^1.0.10"
+    "tenorjs": "^1.0.10",
+    "ytdl-core": "^4.11.2"
   }
 }
