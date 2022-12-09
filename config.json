@@ -1,0 +1,7 @@
+{
+  "token": "yourToken",
+  "clientId": "yourClientId",
+  "guildId": "yourTestGuildId",
+  "tenorKey": "yourTenorKey",
+  "openAiKey": "yourOpenAiKey"
+}
