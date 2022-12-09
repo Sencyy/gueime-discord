@@ -6,6 +6,7 @@
 
     `git clone https://github.com/Sencyy/gueime-discord/`
 * Intall yarn
+
     `sudo emerge -a yarn` or whatever
 
 * Download dependencies
