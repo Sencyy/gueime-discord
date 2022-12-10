@@ -9,7 +9,7 @@
     "remove": "node remove-commands.js",
     "deploy-global": "node deploy-commands-global.js",
     "deploy-guild": "node deploy-commands-guild",
-    "create-config": "wget https://files.catbox.moe/3femye.json"
+    "create-config": "wget https://files.catbox.moe/3femye.json -O config.json"
   },
   "author": "Sencyy",
   "license": "GPL-3.0-or-later",
