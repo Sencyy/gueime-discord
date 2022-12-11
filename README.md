@@ -12,6 +12,10 @@
 * Download dependencies
 
     `yarn install`
+* Create config file
+
+    `yarn create-config`
+* Add your tokens and stuff to it
 * Deploy commands
 
     `yarn deploy-global` or `yarn deploy-guild`

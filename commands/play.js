@@ -16,7 +16,7 @@ module.exports = {
                 .setRequired(true)),
     execute(interaction) {
         const musicUrl = interaction.options.getString("link");
-        var stream = ytdl(musicUrl, {quality: "highestaudio"});
+        //var stream = ytdl(musicUrl, {quality: "highestaudio"});
         //interaction.reply("Gerando cache...");
         
         const player = createAudioPlayer();
